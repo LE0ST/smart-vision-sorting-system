@@ -1,4 +1,4 @@
-# Sistema Inteligente de Clasificación Industrial mediante PDI e Interfaz Gestual sin Contacto
+﻿# Sistema Inteligente de Clasificación Industrial mediante PDI e Interfaz Gestual sin Contacto
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org)
@@ -84,7 +84,7 @@ El flujo operacional se fundamenta en una **máquina de estados finitos (FSM)** 
 ### Configuración del Entorno
 ```bash
 # Clonar repositorio
-git clone https://github.com/leonardoyactayo/smart-vision-sorting-system.git
+git clone https://github.com/LE0ST/smart-vision-sorting-system.git
 cd smart-vision-sorting-system
 
 # Crear entorno virtual (opcional pero recomendado)

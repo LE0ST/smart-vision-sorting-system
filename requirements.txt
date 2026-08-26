@@ -1,4 +1,4 @@
-opencv-python
+﻿opencv-python
 opencv-contrib-python
 mediapipe
 numpy
