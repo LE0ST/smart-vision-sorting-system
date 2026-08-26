@@ -10,6 +10,28 @@ Sistema automatizado de clasificación mecatrónica distribuida basado en **Proc
 
 ---
 
+## 📁 Estructura del Repositorio
+
+```text
+smart-vision-sorting-system/
+├── arduino/
+│   └── prototipo_arduino_v2/
+│       └── prototipo_arduino_v2.ino     # Firmware Arduino con FSM no bloqueante
+├── src/
+│   ├── __init__.py                      # Inicializador del paquete Python
+│   ├── config.py                        # Calibración, puertos serial y constantes
+│   ├── main.py                          # Lógica principal, visión y GUI CustomTkinter
+│   └── operadores/                      # Dataset de rostros para reconocimiento facial
+│       └── .gitkeep
+├── docs/                                # Documentación técnica y diagramas
+│   └── .gitkeep
+├── .gitignore                           # Exclusiones de control de versiones
+├── requirements.txt                     # Dependencias del entorno Python
+└── README.md                            # Documentación técnica del proyecto
+```
+
+---
+
 ## 📐 Arquitectura General del Sistema
 
 El flujo operacional se fundamenta en una **máquina de estados finitos (FSM)** gobernada por eventos visuales, eliminando la necesidad de pulsadores físicos y minimizando perturbaciones lumínicas en planta.
@@ -31,8 +53,8 @@ El flujo operacional se fundamenta en una **máquina de estados finitos (FSM)** 
 ## 🛠️ Módulos Técnicos y Algorítmicos
 
 ### 1. Segmentación Cromática y Morfología Espacial (Visión de Inspección)
-* **Espacio de Color HSV:** Desacopla luminancia (V) de la información cromática (H, S) para garantizar invarianza ante sombras y gradientes de luz de laboratorio.
-* **Filtrado Morfológico No Lineal:** Aplicación secuencial de Apertura (`cv2.MORPH_OPEN`) y Clausura (`cv2.MORPH_CLOSE`) con elemento estructurante de 5x5 para suprimir ruido espurio y sellar discontinuidades.
+* **Espacio de Color HSV:** Desacopla luminancia ($V$) de la información cromática ($H$, $S$) para garantizar invarianza ante sombras y gradientes de luz de laboratorio.
+* **Filtrado Morfológico No Lineal:** Aplicación secuencial de Apertura (`cv2.MORPH_OPEN`) y Clausura (`cv2.MORPH_CLOSE`) con elemento estructurante de $5\times5$ para suprimir ruido espurio y sellar discontinuidades.
 * **Análisis de Conectividad:** Extracción de contornos (`cv2.findContours`) y discriminación de masa activa por umbralización de área (`cv2.countNonZero`).
 
 ### 2. HMI Manos Libres y Control Gestual (MediaPipe Hands)
@@ -64,6 +86,10 @@ El flujo operacional se fundamenta en una **máquina de estados finitos (FSM)** 
 # Clonar repositorio
 git clone https://github.com/leonardoyactayo/smart-vision-sorting-system.git
 cd smart-vision-sorting-system
+
+# Crear entorno virtual (opcional pero recomendado)
+python -m venv .venv
+.venv\Scripts\activate
 
 # Instalar dependencias
 pip install -r requirements.txt
