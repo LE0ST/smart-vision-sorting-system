@@ -220,7 +220,7 @@ smart-vision-sorting-system/
 │       └── prototipo_arduino_v2.ino     # Arduino firmware with non-blocking millis() FSM
 ├── docs/
 │   ├── .gitkeep
-│   ├── SISTEMA INTELIGENTE DE CLASIFICACIÓN - PDS.docx  # Historical university report (prototype v1)
+│   ├── SISTEMA INTELIGENTE DE CLASIFICACIÓN - PDS - PUBLIC.docx  # Sanitized public copy of university report (prototype v1)
 │   └── images/                          # Portfolio demonstration screenshots
 │       ├── sorting-demo.jpg             # Physical ramp and gestural sorting
 │       ├── operator-authentication.jpg  # Dual-camera HMI, biometrics, and EAR
@@ -315,13 +315,13 @@ In a clean repository clone, the face recognizer initializes with no training im
 ## 🏛️ Academic Context & Authors
 
 This project was co-developed by:
-* **Leonardo Yactayo Tolentino**
-* **Max Gil Machaca**
+* **Leonardo Sait Yactayo Tolentino**
+* **Max Albert Antony Gil Machaca**
 
 Electronic Engineering students at **Universidad Nacional Mayor de San Marcos (UNMSM)**, developed for the *Digital Signal Processing (Procesamiento Digital de Señales - PDS)* course under the academic supervision of Prof. Rafael Bustamante Alvarez.
 
 ### Historical Academic Prototype vs. Canonical Implementation
-The repository includes the original university technical report ([`docs/SISTEMA INTELIGENTE DE CLASIFICACIÓN - PDS.docx`](docs/SISTEMA%20INTELIGENTE%20DE%20CLASIFICACI%C3%93N%20-%20PDS.docx)), which documents the initial academic prototype (featuring a single hardware pushbutton trigger, 16x2 LCD display, and Douglas-Peucker geometric shape classification). This repository contains the subsequent canonical implementation, expanding the system into a multi-threaded dual-camera station featuring gestural HMI navigation, MediaPipe landmarks, and LBPH facial biometric authentication.
+The repository includes a sanitized public copy of the original university technical report ([`docs/SISTEMA INTELIGENTE DE CLASIFICACIÓN - PDS - PUBLIC.docx`](docs/SISTEMA%20INTELIGENTE%20DE%20CLASIFICACI%C3%93N%20-%20PDS%20-%20PUBLIC.docx)), which documents the initial academic prototype (featuring a single hardware pushbutton trigger, 16x2 LCD display, and Douglas-Peucker geometric shape classification). This public copy preserves all technical explanations, figures, and equations while removing private student IDs and institutional emails. This repository contains the subsequent canonical implementation, expanding the system into a multi-threaded dual-camera station featuring gestural HMI navigation, MediaPipe landmarks, and LBPH facial biometric authentication.
 
 ---
 

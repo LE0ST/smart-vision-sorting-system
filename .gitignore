@@ -51,3 +51,9 @@ desktop.ini
 $RECYCLE.BIN/
 *.tmp
 *.temp
+
+# Local private archive
+local_archive/
+
+# Original historical report with sensitive academic identifiers
+/docs/SISTEMA INTELIGENTE DE CLASIFICACIÓN - PDS.docx

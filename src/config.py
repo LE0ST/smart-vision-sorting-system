@@ -21,7 +21,7 @@ CANCEL_HOLD   = 0.5
 PALM_HOLD     = 1.0
 FACE_INTERVAL = 2.0
 EAR_THRESH    = 0.22
-LBPH_THRESH   = 115.0   # calibrado para Max Gil
+LBPH_THRESH   = 115.0   # empirically calibrated during experimental validation
 
 CAP_HSV    = [(np.array([90,60,30]), np.array([130,255,180]))]
 CAP_MIN_AREA = 3000
