@@ -1,4 +1,4 @@
-﻿# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -40,6 +40,9 @@ src/operadores/*
 *.bin
 .vscode/
 .idea/
+
+# Local raw demonstration media
+docs/Sistema Inteligente de Clasificación/
 
 # Sistema Operativo
 .DS_Store
